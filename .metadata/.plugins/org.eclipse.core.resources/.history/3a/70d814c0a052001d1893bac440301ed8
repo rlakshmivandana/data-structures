@@ -4,7 +4,7 @@ import java.util.Arrays;
 /**
  * 
  * @author aditya
- * time complexity : O(n)
+ * time complexity : O(nLogn)
  * spaceComplexity : n
  *
  */

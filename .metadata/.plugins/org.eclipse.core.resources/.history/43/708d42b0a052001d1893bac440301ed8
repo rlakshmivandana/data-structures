@@ -1,13 +1,7 @@
 package arrays;
 
 import java.util.Arrays;
-/**
- * 
- * @author aditya
- * time complexity : O(n)
- * spaceComplexity : n
- *
- */
+
 public class ArrayMissingNumber {
 
 	public static void main(String[] args) {

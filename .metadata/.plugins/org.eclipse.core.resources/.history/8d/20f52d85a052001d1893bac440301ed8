@@ -4,8 +4,8 @@ import java.util.Arrays;
 /**
  * 
  * @author vandana
- * time complexity : O(nLogn)
- * spaceComplexity : n
+ * time complexity : O(n)
+ * spaceComplexity : 
  *
  */
 public class ZigZag_Sorting {

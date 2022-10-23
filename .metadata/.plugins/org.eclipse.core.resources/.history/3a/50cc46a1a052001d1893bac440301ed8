@@ -5,7 +5,7 @@ import java.util.Arrays;
  * 
  * @author vandana
  * time complexity : O(nLogn)
- * spaceComplexity : n
+ * spaceComplexity : 
  *
  */
 public class ZigZag_Sorting {
