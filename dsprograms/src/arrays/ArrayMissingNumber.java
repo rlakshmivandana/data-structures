@@ -12,7 +12,9 @@ public class ArrayMissingNumber {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int arr[] = {9,2,4,1,6,7,5,8};		
+		//int arr[] = {9,2,4,1,6,7,5,8};
+		int arr[] = {6,2,3,5,1};		
+
 		System.out.println(Arrays.toString(arr));
 	    int num = missigNumber(arr);
 	    System.out.println("missing number is "+ num);		
