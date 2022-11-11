@@ -1,0 +1,11 @@
+package arrays;
+
+public class Array_Less_k_Together {
+	
+	public static void main(String[] args) {
+		int arr[]= {1,6,5,2,4,3,8,9};
+		int k =4;
+		int count = getMinSwapCount(arr,arr.length,k);
+	}
+
+}
