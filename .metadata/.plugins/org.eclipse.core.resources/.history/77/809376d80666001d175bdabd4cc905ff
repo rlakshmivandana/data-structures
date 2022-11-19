@@ -1,0 +1,30 @@
+package stack;
+
+import java.util.Stack;
+
+public class String_Repeat_Char {
+
+	public static void main(String[] args) {
+		String s = "3[abc]2[bc]";
+		Stack<String> stack = new Stack<String>();
+
+		for (int i = 0; i < s.length(); i++) {
+			if(s.charAt(i) == '['){
+				stack.push(String.valueOf(s.charAt(i)));
+			}else{
+				if(s.charAt(i) == ']'){
+					while (stack.size() > 0 && stack.peek() != "["){
+					  stack.pop();
+					  String temp = stack.pop();
+					}
+				}else{
+					 stack.push(stack.pop().concat(String.valueOf(s.charAt(i))));
+
+				}
+			}
+			
+		}
+		
+	}
+
+}

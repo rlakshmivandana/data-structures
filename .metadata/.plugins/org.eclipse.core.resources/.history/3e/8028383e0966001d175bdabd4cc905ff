@@ -1,0 +1,60 @@
+package stack;
+
+import java.util.Collections;
+import java.util.Stack;
+
+public class String_Repeat_Char {
+
+	public static void main(String[] args) {
+		String s = "3[abc]";
+		Stack<String> stack = new Stack<String>();
+		String res = null;
+
+		for (int i = 0; i < s.length(); i++) {
+			 if (s.charAt(i) >= '0' && s.charAt(i) <= '9') {
+				   stack.push(String.valueOf(s.charAt(i)));
+	            } else if (s.charAt(i) == '[') {
+	                nums.push(cnt);
+	                strs.push(res);
+	                cnt = 0; res = "";
+	            } else if (s.charAt(i) == ']') {
+	                int k = nums.pop();
+	                String next = strs.pop();
+	                for (int j = 0; j < k; ++j) 
+	                    next += res;
+	                res = next; 
+	            } else {
+	                res += s.charAt(i);
+	            }
+			/*boolean isNumeric = s.chars().allMatch( Character::isDigit );
+			if(s.charAt(i) == '['){
+				stack.push(String.valueOf(s.charAt(i)));
+			}else{
+				if(s.charAt(i) == ']'){
+					String temp = stack.peek();
+					boolean isNumeric = temp.chars().allMatch( Character::isDigit );
+
+					if (stack.size() > 0){	
+						stack.pop();
+					    if(stack.peek() == "[") stack.pop();
+                        if(isNumeric){
+                        	res = res + String.join("", Collections.nCopies(Integer.parseInt(stack.pop()), temp));
+                        }	
+					}else{
+						if(isNumeric || )
+						stack.push(item)
+					}
+					    						
+					}
+				}else{
+					if(stack.size()>0){
+					 stack.push(stack.pop().concat(String.valueOf(s.charAt(i))));
+				}
+			}*/
+			
+		}
+		System.out.println(res);
+		
+	}
+
+}

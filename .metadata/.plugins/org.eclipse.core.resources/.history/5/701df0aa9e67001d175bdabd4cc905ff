@@ -1,0 +1,13 @@
+package stack;
+
+import java.util.Stack;
+
+public class NExt_Greater_element {
+
+	public static void main(String[] args) {
+		int arr[] = {8,7,5,2,9,3,10};
+		Stack<String> stack = new Stack<String>();
+
+	}
+
+}

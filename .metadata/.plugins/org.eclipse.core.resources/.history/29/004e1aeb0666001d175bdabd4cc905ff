@@ -1,0 +1,40 @@
+package stack;
+
+import java.util.Collections;
+import java.util.Stack;
+
+public class String_Repeat_Char {
+
+	public static void main(String[] args) {
+		String s = "3[abc]2[bc]";
+		Stack<String> stack = new Stack<String>();
+		String res = null;
+
+		for (int i = 0; i < s.length(); i++) {
+			if(s.charAt(i) == '['){
+				stack.push(String.valueOf(s.charAt(i)));
+			}else{
+				if(s.charAt(i) == ']'){
+					String temp = stack.peek();
+
+					if (stack.size() > 0 && temp != "["){					  
+					    stack.pop();
+					    if(stack.peek() == "[") stack.pop();
+						boolean isNumeric = stack.peek().chars().allMatch( Character::isDigit );
+                        if(isNumeric){
+                        	res = res + String.join("", Collections.nCopies(Integer.parseInt(stack.pop()), temp));
+                        }
+						
+						
+					}
+				}else{
+					 stack.push(stack.pop().concat(String.valueOf(s.charAt(i))));
+
+				}
+			}
+			
+		}
+		
+	}
+
+}

@@ -1,0 +1,23 @@
+package arrays;
+
+import java.util.Stack;
+
+public class stack {
+
+	public static void main(String[] args) {
+		 String str = "((()()";
+		 String subStr = getValidSubStr(str);
+		
+
+	}
+
+	private static String getValidSubStr(String str) {
+		int n = str.length();
+		Stack<Integer> stack = new Stack<Integer>();
+		for (int i = 0; i < n; i++) {
+			
+		}
+		return null;
+	}
+
+}

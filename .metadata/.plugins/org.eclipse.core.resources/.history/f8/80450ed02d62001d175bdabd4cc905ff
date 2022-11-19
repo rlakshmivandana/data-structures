@@ -1,0 +1,16 @@
+package stack;
+
+public class Chocolate_Distribution {
+
+	public static void main(String[] args) {
+	  int arr[] = { 12, 4,  7,  9,  2,  23, 25, 41, 30};
+
+	  int m = 5; // Number of students
+	
+	  int n = arr.length;
+	  System.out.println("Minimum difference is "
+	                     + findMinDiff(arr, n, m));
+
+	}
+
+}

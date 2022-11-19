@@ -1,18 +1,22 @@
 package arrays;
 
+import java.util.Arrays;
+
 public class Merge_Sorted_Arrays {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		int[] arr1 = new int[5];
-		int[] arr2 = {3,9,12,14};
-		int j = arr2.length-1;
-		int k =arr1.length-1;
-	
 		arr1[1]=1;
 		arr1[2]=5;
 		arr1[4]=10;
-		int i= k-j-1;
+		
+		int[] arr2 = {3,9,12,14};
+		
+		int k =arr1.length-1;
+		int j = arr2.length-1;		
+		int i= arr1.length-arr2.length-1;
+		
 		arr1 = moveFront(arr1);
 		while(j>=0 || k >=0){
 			if(arr1[i]<arr2[j]){
@@ -30,11 +34,12 @@ public class Merge_Sorted_Arrays {
 		// TODO Auto-generated method stub
 		int i=0;int j=0;
 		for (i = 0; i < arr1.length; i++) {
-			if(arr1[i] != -99){
+			if(arr1[i] != 0){
 				arr1[j] = arr1[j];
 				j++;
 			}
 		}
+		System.out.println(Arrays.toString(arr1));
 		return arr1;
 	}
 

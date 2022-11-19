@@ -1,0 +1,41 @@
+package stack;
+
+import java.util.Stack;
+
+public class Check_Paranthesis {
+
+	public static void main(String[] args) {
+
+		String str = "[a+(c*d)]";
+		boolean res = checkParanthesis(str);
+		char a ='d';
+		
+	}
+
+	private static boolean checkParanthesis(String str) {
+		char[] expr;
+		Stack<Character> stack = new Stack<Character>();
+		expr = str.toCharArray();
+		for (int i = 0; i < expr.length; i++) {
+			if(expr[i] =='(' ||expr[i] =='['||expr[i] =='{' ){
+				stack.push(expr[i]);
+			}
+			if(stack.empty()) return false;
+			switch(expr[i]){
+			case ')':{
+				
+			}
+			case '}':{
+							
+			}
+			case ']':{
+				
+			}
+			}
+			
+		}
+         return false;
+	}
+	
+
+}
